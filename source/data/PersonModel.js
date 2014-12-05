@@ -138,7 +138,7 @@ enyo.kind({
 		if (data.allSearchTerms.length === 0) {
 			data.allSearchTerms.push("");   // This ensures this contact appears in the list of everyone.
 		}
-//		console.log("PersonModel.parse end:  ", data.name && data.name.givenName, data.name && data.name.familyName, data.allSearchTerms, data);
+		console.log("PersonModel.parse end:  ", data.name && data.name.givenName || data.organization && data.organization.name, data.name && data.name.familyName, data.allSearchTerms, data);
     	return data;    	
     },
 
